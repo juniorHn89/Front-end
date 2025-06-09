@@ -1,0 +1,43 @@
+body {
+  background-color: #f7f1f1;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+.tarjeta {
+  background-color: rgba(68, 43, 182, 0.199);
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.precio {
+  color: green;
+  font-weight: bold;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #555;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: navy;
+}
