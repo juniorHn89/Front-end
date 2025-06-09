@@ -1,0 +1,5 @@
+# Ignorar configuraciones locales
+.vscode/
+node_modules/
+dist/
+.env
