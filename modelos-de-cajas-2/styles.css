@@ -1,0 +1,94 @@
+.display-block {
+  display: block;
+}
+
+#div1 {
+  height: 100px;
+  width: 200px;
+  border: blue solid 5px;
+  border-radius: 5%;
+  background-color: rgb(247, 39, 11);
+}
+
+#div2 {
+  height: 100px;
+  width: 300px;
+  border: red solid 7px;
+  border-radius: 9%;
+  background-color: rgb(17, 20, 235);
+
+}
+
+#div3 {
+  height: 100px;
+  width: 400px;
+  border: green solid 9px;
+  border-radius: 0%;
+  background-color: blueviolet;
+}
+#div1,
+#div2,
+#div3 {
+  margin: 5px;
+  padding: 10px;
+}
+
+.display-block:hover {
+  box-shadow: 0 0 10px rgba(12, 10, 10, 0.74);
+  transform: scale(1.05);
+  transition: all 0.9s ease;
+}
+
+.display-block:hover #div1,
+.display-block:hover #div2,
+.display-block:hover #div3 {
+  box-shadow: 0 0 10px rgba(12, 10, 10, 0.74);
+  transform: scale(1.00);
+  transition: all 0.9s ease;
+}
+
+.display-flex {
+  display: flex;
+}
+
+#div4 {
+  height: 100px;
+  width: 300px;
+  border: purple solid 5px;
+  border-radius: 5%;
+  background-color: rgb(42, 221, 26);
+}
+
+#div5 {
+  height: 100px;
+  width: 300px;
+  border: rgb(54, 42, 54) solid 5px;
+  border-radius: 8%;
+  background-color: aqua;
+}
+
+#div6 {
+  height: 100px;
+  width: 300px;
+  border: rgba(247, 11, 188, 0.884) solid 5px;
+  border-radius: 0%;
+  background-color: blue;
+}
+
+#div4,
+#div5,
+#div6 {
+  margin: 5px;
+  padding: 10px;
+}
+
+.display-flex:hover{
+  box-shadow: 0 0 10px rgba(12, 10, 10, 0.61);
+}
+.display-flex:hover #div4,
+.display-flex:hover #div5,
+.display-flex:hover #div6 {
+  transform: scale(1.05);
+  transition: all 0.9s ease;
+  box-shadow: 0 0 10px rgba(12, 10, 10, 0.61);
+}

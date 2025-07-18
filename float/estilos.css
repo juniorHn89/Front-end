@@ -1,0 +1,25 @@
+.div1 {
+    display: flex;
+    width: 100%;
+    height: 500px
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#float-left {
+    float: left;
+    box-shadow: black;
+    width: 50%;
+}
+
+#float-right {
+    float: right;
+    font-size: 150%;
+    text-shadow: rgba(17, 3, 3, 0.692) 2px 2px 5px;
+    color: #140909f1;
+    background-color: #f0f0f0;
+    text-align: right;
+    border-radius: 10px;
+    width: 50%;
+}
+
