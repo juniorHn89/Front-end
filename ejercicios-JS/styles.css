@@ -1,0 +1,27 @@
+body {
+    background: black;
+    text-shadow: chartreuse 1px 1px 2px;
+}
+
+.div1 {
+    background: black;
+}
+
+.div2 {
+    color: rgb(50, 205, 76);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgb(50, 205, 76);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(50, 205, 76, 0.5);
+}
+.div3 {
+    background: black;
+    height: 200px;
+    width: 100%;
+    color: rgb(50, 205, 76);
+    text-align: center;
+}
