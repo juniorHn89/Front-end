@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
   background: #4f4f50;
   display: flex;
   justify-content: center;
@@ -28,12 +28,13 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.botton:hover {
-  background-color: #0056b3;
-    transition: 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+.boton:hover {
+  background-color: #ce08b4de;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 
 }

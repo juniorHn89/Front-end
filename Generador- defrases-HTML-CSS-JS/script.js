@@ -5,7 +5,12 @@ const frases = [
   "La práctica hace al maestro.",
   "Cada día es una nueva oportunidad.",
   "Los errores son parte del aprendizaje.",
-  "¡Tú puedes con esto y más!"
+  "¡Tú puedes con esto y más!",
+  "La perseverancia es la clave del éxito.",
+  "El único modo de hacer un gran trabajo es amar lo que haces.",
+  "La vida es un 10% lo que te sucede y un 90% cómo reaccionas ante ello.",
+  "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+  "No cuentes los días, haz que los días cuenten.",
 ];
 
 // 2. Seleccionamos los elementos del DOM
