@@ -1,3 +1,6 @@
+// Alerta
+alert("!Bienvenido al generador de frases motivacionales! Hazclic para obtener una frase motivacional.")
+
 // 1. Creamos un array de frases
 const frases = [
   "No te detengas hasta sentirte orgulloso.",
@@ -23,3 +26,4 @@ boton.addEventListener("click", () => {
   const indice = Math.floor(Math.random() * frases.length);
   frase.textContent = frases[indice];
 });
+
