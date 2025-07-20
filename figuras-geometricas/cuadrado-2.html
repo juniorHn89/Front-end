@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Cuadrado interactivo</title>
-        <style>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cuadrado interactivo</title>
+    <style>
+        .container {
+            display:grid
+            
+        }
         .cuadrado {
-        width: 200px;
-        height: 200px;
-        background-color: aqua;
-        border: 5px solid green;
-        transition: background-color 0.8s ease;
-        background-color: 0.8s ease;
-        border-color: 0.8s ease;
-        margin: 50px auto;
+            width: 200px;
+            height: 25vh;
+            background-color: aqua;
+            border: 5px solid green;
+            transition: background-color 0.8s ease, border-color 0.8s ease;
+            margin: 50px auto;
+            animation: rotar 2s linear infinite;
+            
         }
+
         .cuadrado:hover {
-        background-color: blueviolet;
-        transform: rotate(360deg);
-        border-color: yellow;
+            background-color: blueviolet;
+            border-color: yellow;
         }
-        </style>
-    </head>
-    <body>
+
+        .cuadrado-inverso {
+            width: 200px;
+            height: 25vh;
+            background-color: rgb(0, 255, 106);
+            border: 5px solid rgb(128, 0, 96);
+            transition: background-color 0.8s ease, border-color 0.8s ease;
+            margin: 50px auto;
+            animation: rotar-inverso 2s linear infinite;
+        }
+
+        .cuadrado-inverso:hover {
+            background-color: deeppink;
+            border-color: orange;
+        }
+
+        @keyframes rotar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotar-inverso {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
         <div class="cuadrado"></div>
-    </body>
+        <div class="cuadrado-inverso"></div>
+    </div>
+</body>
+
 </html>
