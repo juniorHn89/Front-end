@@ -1,0 +1,9 @@
+#btncontar {
+    background: blue;
+    color: white;
+} 
+#contador {
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+}
