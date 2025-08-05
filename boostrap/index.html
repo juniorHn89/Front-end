@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Photo Feed con Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <nav class="navbar bg-body-tertiary">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <i class="fab fa-instagram fa-lg"></i>
+                Instagram
+            </a>
+
+            <div class="d-flex align-items-center gap-2">
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#newPostModal">
+                    Create a New Post
+                </button>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">Profile</button></li>
+                        <li><button class="dropdown-item" type="button">Accessibility</button></li>
+                        <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                        <li><button class="dropdown-item" type="button">Log out</button></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="newPostModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newPostModalLabel">Create a New Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="container my-4">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+            <div class="col- my-4">
+                <img src="https://plus.unsplash.com/premium_photo-1667030474693-6d0632f97029?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Gato">
+            </div>
+
+            <div class="col my-4">
+                <img src="https://esgeeks.com/wp-content/uploads/2021/10/Librerias-de-Python-Hacking-1024x576.jpg"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Python">
+            </div>
+
+            <div class="col my-4">
+                <img src="https://www.muycomputerpro.com/wp-content/uploads/2018/02/Machine-learning-in-cyber-security-770x476.jpg"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Red Neuronal">
+            </div>
+
+            <div class="col my-4">
+                <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s53b36d06bb1bc5e5/image/ie4cad69302736b00/version/1638968992/image.jpg"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Akita Americano">
+            </div>
+
+             <div class="col my-4">
+                <img src="https://i.pinimg.com/736x/3d/41/4a/3d414a8e660f319bd72364b96c8b9d07.jpg"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Gaara">
+            </div>
+
+             <div class="col my-4">
+                <img src="https://elsouvenir.com/wp-content/uploads/2020/09/El-origen-de-la-Muralla-China.-ComputerHoy.jpg"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Muralla china">
+            </div>
+
+             <div class="col my-4">
+                <img src="https://i.pinimg.com/736x/0f/4e/2a/0f4e2aea740e54b35fab7a0fe835f52d.jpg"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Kawasaki z1000">
+            </div>
+
+             <div class="col my-4">
+                <img src="https://i.ytimg.com/vi/tDWvWZlNAbo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCa24leNHETURa6CjuH9mYzD0jVmA"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Lamborgini">
+            </div>
+
+             <div class="col my-4">
+                <img src="https://www.desura.games/files/images/49/49eee8a55fe13133dc5d8ae33106c74b.jpg"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Mario Bros">
+            </div>
+
+             <div class="col my-4">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6tlc7e-Mka7JUFpcTXW4YqI_XWkvvMKkl4sMoYWKU32QUw_CpdnLHz-S3TOurxynM3dJFD5QQF4espDfgiHygA9n3roy7bd6so5c4FfUSdbrSqsVJJS7wqQY5sspGbk1_BtYGCWx023k/s1280/Cayos+Coachinos%252C+Honduras%252C+Descubri+Honduras.png"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Cayos cochinos">
+            </div>
+
+             <div class="col my-4">
+                <img src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/c07ad261-cf06-4bc4-b33e-d5ff42a66c62/d7b38496-b8fc-4878-a9ab-8415d802d31d?host=wbd-images.prod-vod.h264.io&partner=beamcom"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Bruce Lee">
+            </div>
+
+            <div class="col my-4">
+                <img src="https://static.tiendy.net/shops/elrincondehuelva/uploads/receta%20marinera%20paella%20de%20marisco%20elrincondehuelva.jpg"
+                    class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Akita Americano">
+            </div>
+
+
+        </div>   
+       
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
