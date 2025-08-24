@@ -1,0 +1,33 @@
+ body {
+     font-family: Arial, sans-serif;
+     text-align: center;
+     margin-top: 50px;
+ }
+
+  .col.align-self-center {
+  word-break: break-word;
+}
+ .card {
+     font-size: 26px;
+     width: 280px;
+     height: 300px;
+     border: 2px solid black;
+     border-radius: 20px;
+      display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    text-align: center;
+}
+
+ 
+
+
+ .heart,
+ .diamond {
+     color: red;
+ }
+
+ .spade,
+ .club {
+     color: black;
+ }
