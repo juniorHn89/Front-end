@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Form Example</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h4>Payment form example</h4>
+    </div>
+    <div class="card-body">
+      <div class="alert alert-danger" role="alert">
+        Some fields are missing
+      </div>
+
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-6 mb-3">
+            <label for="cardNumber" class="form-label">Card #</label>
+            <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX" required pattern="\d{13,16}">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cvc" class="form-label">CVC #</label>
+            <input type="text" class="form-control" id="cvc" placeholder="0000" required pattern="\d{3,4}">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="amount" class="form-label">Amount</label>
+            <div class="input-group">
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" id="amount" placeholder="Amount" required min="0" step="0.01">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6 mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6 mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select" id="state" required>
+              <option selected disabled>Pick a state</option>
+              <option>California</option>
+              <option>Texas</option>
+              <option>New York</option>
+              <option>Florida</option>
+              
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="postalCode" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="postalCode" pattern="\d{5}" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">We accept:</label><br>
+          <img src="https://i.imgur.com/2ISgYja.png" alt="Accepted Cards" class="img-fluid">
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Add any notes here."></textarea>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-secondary me-2">Cancel</button>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle (optional, for dropdowns, modals, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
