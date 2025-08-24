@@ -1,9 +1,8 @@
 import "bootstrap";
 import "./style.css";
 
+ function generareExcuse () {
 
-window.onload = function() {
-  //write your code here
   let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
   let action = ['ate', 'peed', 'crushed', 'broke'];
   let what = ['my homework', 'my phone', 'the car'];
@@ -21,6 +20,6 @@ window.onload = function() {
   document.getElementById("excuse").innerHTML = randomSentence;
   console.log(randomSentence);
 
+ };
 
-};
-
+generareExcuse();
