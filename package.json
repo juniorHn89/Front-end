@@ -20,5 +20,8 @@
   "homepage": "https://github.com/juniorHn89/Front-end#readme",
   "devDependencies": {
     "jest": "^30.0.5"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
